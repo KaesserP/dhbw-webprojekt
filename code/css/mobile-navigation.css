@@ -1,0 +1,94 @@
+header nav .dropbtn, header .mobile-brand{ display: none;}
+@media (max-width: 500px){
+    header nav ul li {list-style: none;}
+    /* Brand */
+    header .mobile-brand{
+        display: block;
+        width: 60%; 
+        height: 50px; 
+        float: right; 
+        padding-right: 1em; 
+        box-sizing: border-box;}
+     header figure{height: inherit; padding: 0.3em; box-sizing: border-box}
+     header img{    
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        top: 50%;
+        right: -100%;
+        position: relative;
+        -ms-transform: translate(-100%, -50%);
+        -webkit-transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);}
+    /* Brand */
+    
+    /* dropbox-div */
+     header .dropdown {position: relative; display: inline !important;}
+     header .dropdown:hover .dropbtn {opacity: 0.8;}
+    /* dropbox-div */
+    
+    /* Dropdownbutton */
+     header .dropbtn {
+        display: inline !important;
+        padding: 9px;
+        height: 50px;
+        width: 50px;
+        border: none;
+        cursor: pointer;
+    }
+     header .dropbtn span,  header .dropbtn span::before,  header .dropbtn span::after{height: 3px; width: 30px;}
+        header .dropbtn span{
+        -webkit-transition: -webkit-transform 0.2s ease-in;
+        position: relative;
+        display: block;
+        content: '';
+        background-color: white;
+        }
+    .dropbtn span::before, .dropbtn span::after{
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: inherit;
+        }
+    .dropbtn span::before{top: -8px;}
+    .dropbtn span::after{top: 8px;}
+    
+    .dropdown:hover .dropbtn span {
+        transform: rotate(45deg) !important;
+        top: 0px;
+    }
+    .dropdown:hover .dropbtn span::before, .dropdown:hover .dropbtn span::after {
+        transform:  rotate(90deg) !important;
+        top: 0px;
+    }
+    /* Dropdownbutton */
+    
+    /* Dropdowncontent */
+    .dropdown-content {
+        max-height: 0px;
+        transition: max-height 0.8s ease-out;
+        overflow: hidden;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        background: #eee;
+    }
+    .dropdown-content.level-1 li a, .dropdown-content .input-group{
+        padding: 12px 16px;
+        border-bottom: thin solid #ccc;}
+    .dropdown-content.level-1 li a{
+        display: block;
+        text-decoration: none;     
+    }    
+     .dropdown-content .level-2 li {
+        font-size: 0.8em;
+        margin-left: 1em;
+    }
+
+    .dropdown-content li a:hover {background-color: #e98a17; color: white;}
+
+    .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content {
+        max-height: 1000px;
+        transition: max-height 1s ease-in;
+    }
+    /* Dropdowncontent */
+}

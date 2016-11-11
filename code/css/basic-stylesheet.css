@@ -1,0 +1,82 @@
+*{box-sizing: border-box;}
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    /* background: -webkit-linear-gradient(top, rgb(255,175,75) 0%,rgb(255,146,10) 100%); */
+}
+/* Hintergrundfarben */
+    /* primary */
+    .primary--color{background-color: #e98a17;}
+    .primary--color--10{background-color: #FFE7CA;}
+    .primary--color--20{background-color: #F2CFA5;}
+    /* primary */
+
+    /* secondary */
+    .secondary--color{background-color: blue;}
+    .secondary--color--10{background-color: blue;}
+    .secondary--color--20{background-color: blue;}
+    /* secondary */
+
+    /* standard */
+    .white--color{background-color: #fff;}
+    .black--color{background-color: #000; !important}
+    /* standard */
+/* Hintergrundfarben */
+
+/* Textfarben */    
+    /* primary */
+    .primary--text--color {color: #e98a17; }
+    .primary--text--color--10 {color: #FFE7CA;}
+    .primary--text--color--20 {color: #F2CFA5;}
+    /* primary */
+
+    /* secondary */
+    .secondary--text--color {color: blue; }
+    /* secondary */
+
+    /* standard */
+    .white--text--color{color: #fff;}
+    .black--text--color{color: #000;}
+    .black--text--color--80{color:#333}
+    /* standard */
+/* Textfarben */
+
+/* Überschriften */
+	h1{font-size: 2em}
+	h2{font-size: 1,5em}
+	h3{font-size: 1,5em;color: #8e8e8e}
+	h4{font-size: 1em}
+/* Überschriften */
+
+/* Text */
+    .standardtext {
+    line-height: normal;
+    
+}
+/* Text */
+
+/* Zitate */
+    .zitat {
+        border-left-color: gray;
+        margin-right: 3em;
+        margin-left: 3em;
+}
+/* Zitate */
+
+/* Bilder */
+    .picture-standard {
+        float: left;
+        max-width:  width: 50%;
+        height:auto;
+        border-radius: 18px;
+    }
+
+
+
+@media (min-width: 1000px){
+main{width: 1000px; margin: auto;}
+}
+
+h1{line-height: 1}
+
+.pull-right{float: right;}
+.pull-left{float: left;}
